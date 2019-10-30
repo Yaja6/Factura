@@ -194,4 +194,25 @@ public class Clsconexion {
         return registrar;
 
 
-}}
+}
+
+ public boolean actualizarVendedor(String d, String t, String c, int clave) throws SQLException {
+        ventas = null;
+
+        boolean actualizar = false;
+        try {
+            String comando = "UPDATE TbVendedor SET dirVendedor= '" + d + "'," + "tlfVendedor ='" + t + "'," + "celVendedor ='" + c + "'"
+                    + "WHERE claveVendedor =" + clave;
+
+            tabla = base.createStatement();
+            tabla.execute(comando);
+            ventas = tabla.getResultSet();
+            actualizar = true;
+        } catch (SQLException err) {
+            System.out.println("No" + err);
+        }
+        return actualizar;
+    }
+
+
+}
