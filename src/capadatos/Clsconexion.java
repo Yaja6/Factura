@@ -29,4 +29,9 @@ public class Clsconexion {
             System.out.println("conexion fallida " + err);
         }
     }
+    
+    public ResultSet ventas ()
+    {
+        return ventas;
+    }
 }
