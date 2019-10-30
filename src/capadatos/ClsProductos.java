@@ -5,8 +5,6 @@ import java.sql.SQLException;
 
 public class ClsProductos {
 
-    
-
     private int _claveProducto;
     private String _nomProducto;
     private String _precioProducto;
@@ -21,16 +19,16 @@ public class ClsProductos {
         _uniProducto = null;
 
     }
-    
-    public void leerProducto(ResultSet producto) throws SQLException{
+
+    public void leerProducto(ResultSet producto) throws SQLException {
         _claveProducto = producto.getInt("claveProducto");
         _nomProducto = producto.getString("nomProducto");
         _precioProducto = producto.getString("precioProducto");
         _cantProducto = producto.getInt("cantProducto");
-        _uniProducto = producto.getString("unidProducto");       
+        _uniProducto = producto.getString("unidProducto");
     }
 
-   public int getClaveProducto() {
+    public int getClaveProducto() {
         return _claveProducto;
     }
 
@@ -69,7 +67,5 @@ public class ClsProductos {
     public void setUniProducto(String _uniProducto) {
         this._uniProducto = _uniProducto;
     }
-    
-    
-    
+
 }
