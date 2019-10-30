@@ -173,7 +173,25 @@ public class Clsconexion {
             System.out.println("No" + e);
         }
         return eliminar;
-    }
+        }
+ public boolean registrarVendedor(String n, String a, String d, String t, String c) throws SQLException {
+        ventas = null;
+        boolean registrar = false;
+        try {
+            String insertar = "INSERT INTO TbVendedor"
+                    + "(nomVendedor,apellVendedor,dirVendedor,tlfVendedor,celVendedor)"
+                    + "VALUES"
+                    + "('" + n + "','" + a + "','" + d + "','" + t + "','" + c + "');";
+            tabla = base.createStatement();
+            tabla.execute(insertar);
+            ventas = tabla.getResultSet();
+            if (ventas != null) {
+                registrar = true;
+            }
+        } catch (SQLException re) {
+            System.out.println("No" + re);
+        }
+        return registrar;
 
 
-}
+}}
