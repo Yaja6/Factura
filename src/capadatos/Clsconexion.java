@@ -112,4 +112,19 @@ public class Clsconexion {
         }
         return eliminar;
     }
+       public boolean eliminarclientedeCab(int _clave) {
+        ventas = null;
+
+        boolean eliminar = false;
+        try {
+            String comando = "DELETE FROM TbCabFactura WHERE claveCliente = " + _clave;
+            tabla = base.createStatement();
+            tabla.execute(comando);
+            ventas = tabla.getResultSet();
+            eliminar = true;
+        } catch (SQLException e) {
+            System.out.println("No" + e);
+        }
+        return eliminar;
+    }
 }
