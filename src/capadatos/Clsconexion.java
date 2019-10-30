@@ -96,4 +96,20 @@ public class Clsconexion {
         }
         return actualizar;
     }
+      
+       public boolean eliminarcliente(int _clave) {
+        ventas = null;
+
+        boolean eliminar = false;
+        try {
+            String comando = "DELETE FROM TbClientes WHERE ClaveCliente = " + _clave;
+            tabla = base.createStatement();
+            tabla.execute(comando);
+            ventas = tabla.getResultSet();
+            eliminar = true;
+        } catch (SQLException e) {
+            System.out.println("No" + e);
+        }
+        return eliminar;
+    }
 }
