@@ -59,4 +59,23 @@ public class Clsconexion {
         return comprobar;
     }
 
+     public boolean registrarCliente(String n, String a, String f, String d, String c, String e) throws SQLException {
+        ventas = null;
+        boolean registrar = false;
+        try {
+            String insertar = "INSERT INTO TbClientes"
+                    + "(nomCliente,apellCliente,fechaCliente,dirCliente,celCliente,emailCliente)"
+                    + "VALUES"
+                    + "('" + n + "','" + a + "','" + f + "','" + d + "','" + c + "','" + e + "');";
+            tabla = base.createStatement();
+            tabla.execute(insertar);
+            ventas = tabla.getResultSet();
+            if (ventas != null) {
+                registrar = true;
+            }
+        } catch (SQLException re) {
+            System.out.println("No" + re);
+        }
+        return registrar;
+    }
 }
