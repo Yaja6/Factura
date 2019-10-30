@@ -226,7 +226,27 @@ public class WinPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItem4ActionPerformed
 
     private void BtnGenerarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnGenerarActionPerformed
-      
+        
+        DefaultTableModel modelo=(DefaultTableModel)tablaProd.getModel();
+        
+        String []c=new String [7];
+        
+        try{
+            for(int i=0;i<8 ;i++){
+                _producto.siguiente();
+                c[0]=String.valueOf(_producto._ventas().getInt("claveProducto"));
+                c[1]=_producto._ventas().getString("nomProducto");
+                c[2]=_producto._ventas().getString("precioProducto");
+                c[3]=String.valueOf(_producto._ventas().getInt("cantProducto"));
+                c[4]=_producto._ventas().getString("undProducto");
+                
+                modelo.addRow(c);
+            }
+        } catch (SQLException ex) {
+           Logger.getLogger(WinPrincipal.class.getName()).log(Level.SEVERE, null, ex);
+       }
+        
+        tablaProd.setModel(modelo);
         
     }//GEN-LAST:event_BtnGenerarActionPerformed
 
