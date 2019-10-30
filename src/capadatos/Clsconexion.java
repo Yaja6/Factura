@@ -127,4 +127,34 @@ public class Clsconexion {
         }
         return eliminar;
     }
+       
+       public boolean eliminarclienteDeL(int _clave) {
+        ventas = null;
+
+        boolean eliminar = false;
+        try {
+            String comando = "DELETE FROM TbDelFactura WHERE claveCliente = " + _clave;
+            tabla = base.createStatement();
+            tabla.execute(comando);
+            ventas = tabla.getResultSet();
+            eliminar = true;
+        } catch (SQLException e) {
+            System.out.println("No" + e);
+        }
+        return eliminar;
+    }
+        public boolean eliminarvendedor(int _clave) {
+        ventas = null;
+
+        boolean eliminar = false;
+        try {
+            String comando = "DELETE FROM TbVendedor WHERE claveVendedor = " + _clave;
+            tabla = base.createStatement();
+            tabla.execute(comando);
+            ventas = tabla.getResultSet();
+            eliminar = true;
+        } catch (SQLException e) {
+            System.out.println("No" + e);
+        }
+        return eliminar;
 }
