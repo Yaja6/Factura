@@ -9,29 +9,42 @@ import java.beans.Statement;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 
 
 
 public class Clsconexion {
-    private Connection base;
-    private Statement tabla;
+   private Connection base;
+    private java.sql.Statement tabla;
     private ResultSet ventas;
-    
-    public Clsconexion (String dirbase)
-    {
+
+   public Clsconexion(String dirbase) {
         try {
-            base = DriverManager.getConnection("jdbc:ucanacces://"+ dirbase);
-            System.out.println("conexion exitosa");
-           tabla = (Statement) base.createStatement(ResultSet.FETCH_UNKNOWN, ResultSet.TYPE_SCROLL_SENSITIVE);
-            
-        }catch (Exception err)
-        {
-            System.out.println("conexion fallida " + err);
+            base = DriverManager.getConnection("jdbc:ucanaccess://" + dirbase);
+            System.out.println("***CONEXIÓN EXITOSA***");
+            tabla = base.createStatement(ResultSet.FETCH_UNKNOWN, ResultSet.TYPE_SCROLL_SENSITIVE);
+
+        } catch (Exception err) {
+            System.out.println("***CONEXIÓN FALLIDA***" + err);
         }
+
     }
-    
-    public ResultSet ventas ()
-    {
+
+    public ResultSet _ventas() {
         return ventas;
     }
+
+    
+    public boolean consulta(String _tabla) throws SQLException {
+        boolean comprobar = false;
+        String comando = " SELECT * FROM " + _tabla;
+        ventas = null;
+        tabla.execute(comando);
+        ventas = tabla.getResultSet();
+        if (ventas != null) {
+            comprobar = true;
+        }
+        return comprobar;
+    }
+    
 }
