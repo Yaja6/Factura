@@ -246,3 +246,20 @@ public class Clsconexion {
         return comprobar;
 
 }
+
+ public boolean verVendedor(int clave) throws SQLException {
+        boolean comprobar = false;
+        String comando = "SELECT * FROM TbVendedor WHERE claveVendedor  = " + clave;
+        ventas = null;
+        tabla.execute(comando);
+        ventas = tabla.getResultSet();
+        if (ventas != null) {
+            comprobar = true;
+        }
+        return comprobar;
+    }
+
+
+
+
+}
