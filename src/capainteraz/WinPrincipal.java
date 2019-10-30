@@ -25,6 +25,7 @@ public class WinPrincipal extends javax.swing.JFrame {
     public WinPrincipal() {
         initComponents();
          archbd.setVisible(false);
+         PnlVerProductos.setVisible(false);
     }
 
     /**
@@ -53,6 +54,7 @@ public class WinPrincipal extends javax.swing.JFrame {
         jMenuItem4 = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(102, 102, 102));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         archbd.addActionListener(new java.awt.event.ActionListener() {
@@ -171,6 +173,11 @@ public class WinPrincipal extends javax.swing.JFrame {
         jMenu2.setText("Productos");
 
         jMenuItem3.setText("Ver Productos");
+        jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem3ActionPerformed(evt);
+            }
+        });
         jMenu2.add(jMenuItem3);
 
         jMenuItem4.setText("Nuevo Producto");
@@ -238,7 +245,7 @@ public class WinPrincipal extends javax.swing.JFrame {
                 c[1]=_producto._ventas().getString("nomProducto");
                 c[2]=_producto._ventas().getString("precioProducto");
                 c[3]=String.valueOf(_producto._ventas().getInt("cantProducto"));
-                c[4]=_producto._ventas().getString("undProducto");
+                c[4]=_producto._ventas().getString("unidProducto");
                 
                 modelo.addRow(c);
             }
@@ -249,6 +256,12 @@ public class WinPrincipal extends javax.swing.JFrame {
         tablaProd.setModel(modelo);
         
     }//GEN-LAST:event_BtnGenerarActionPerformed
+
+    private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
+        archbd.setVisible(false);
+        PnlVerProductos.setVisible(true);
+        
+    }//GEN-LAST:event_jMenuItem3ActionPerformed
 
     /**
      * @param args the command line arguments

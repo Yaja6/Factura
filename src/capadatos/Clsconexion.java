@@ -5,7 +5,7 @@
  */
 package capadatos;
 
-import java.beans.Statement;
+import java.sql.Statement;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -15,7 +15,7 @@ import java.sql.SQLException;
 
 public class Clsconexion {
    private Connection base;
-    private java.sql.Statement tabla;
+    private Statement tabla;
     private ResultSet ventas;
 
    public Clsconexion(String dirbase) {
