@@ -5,10 +5,16 @@
  */
 package capadatos;
 
-/**
- *
- * @author crist
- */
+import java.beans.Statement;
+import java.sql.Connection;
+import java.sql.ResultSet;
+
+
+
 public class Clsconexion {
+    private Connection base;
+    private Statement tabla;
+    private ResultSet ventas;
+    
     
 }
