@@ -260,6 +260,25 @@ public class Clsconexion {
     }
 
 
+public void siguiente() {
+        try {
 
+            if (!(ventas.next())) {
+                ventas.first();
+            }
+        } catch (SQLException err) {
+            System.out.println("***ERROR AL RECORRER");
+        }
+    }
+
+    public void anterior() {
+        try {
+            if (!(ventas.previous())) {
+                ventas.last();
+            }
+        } catch (SQLException err) {
+            System.out.println("***ERROR AL RECORRER");
+        }
+    }
 
 }
