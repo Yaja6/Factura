@@ -233,5 +233,16 @@ public class Clsconexion {
         }
         return registrar;
     }
+  
+   public boolean verCliente(int clave) throws SQLException {
+        ventas = null;
+        boolean comprobar = false;
+        String comando = "SELECT * FROM TbClientes WHERE ClaveCliente  = " + clave;
+        tabla.execute(comando);
+        ventas = tabla.getResultSet();
+        if (ventas != null) {
+            comprobar = true;
+        }
+        return comprobar;
 
 }
