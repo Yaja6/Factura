@@ -214,5 +214,24 @@ public class Clsconexion {
         return actualizar;
     }
 
+  public boolean registrarProducto(String n, String p, String c, String u) throws SQLException {
+        ventas = null;
+        boolean registrar = false;
+        try {
+            String insertar = "INSERT INTO TbProductos"
+                    + "(nomProducto,precioProducto,cantProducto,unidProducto)"
+                    + "VALUES"
+                    + "('" + n + "','" + p + "','" + c + "','" + u + "');";
+            tabla = base.createStatement();
+            tabla.execute(insertar);
+            ventas = tabla.getResultSet();
+            if (ventas != null) {
+                registrar = true;
+            }
+        } catch (SQLException re) {
+            System.out.println("No" + re);
+        }
+        return registrar;
+    }
 
 }
