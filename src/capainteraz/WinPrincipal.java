@@ -11,6 +11,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
 /**
@@ -31,6 +32,7 @@ public class WinPrincipal extends javax.swing.JFrame {
         PnlClienteNuevo.setVisible(false);
         PnlClienteVer.setVisible(false);
         PnlVerVendedores.setVisible(false);
+        PnlNuevVend.setVisible(false);
     }
 
     /**
@@ -125,6 +127,20 @@ public class WinPrincipal extends javax.swing.JFrame {
         jLabel29 = new javax.swing.JLabel();
         jLabel31 = new javax.swing.JLabel();
         LblTelfVend = new javax.swing.JLabel();
+        PnlNuevVend = new javax.swing.JPanel();
+        jLabel32 = new javax.swing.JLabel();
+        jSeparator4 = new javax.swing.JSeparator();
+        jLabel33 = new javax.swing.JLabel();
+        txtNomVend = new javax.swing.JTextField();
+        jLabel34 = new javax.swing.JLabel();
+        txtApellVend = new javax.swing.JTextField();
+        jLabel35 = new javax.swing.JLabel();
+        txtDirVend = new javax.swing.JTextField();
+        jLabel36 = new javax.swing.JLabel();
+        txtCelVend = new javax.swing.JTextField();
+        jLabel37 = new javax.swing.JLabel();
+        txtTelfVend = new javax.swing.JTextField();
+        BtnGuardarVend = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
@@ -711,7 +727,10 @@ public class WinPrincipal extends javax.swing.JFrame {
         jLabel23.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel23.setText("VENDEDORES");
 
+        jLabel24.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel24.setText("Clave: ");
+
+        LblClaveVend.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
 
         BtnAnteriorVend.setText("Anterior");
         BtnAnteriorVend.addActionListener(new java.awt.event.ActionListener() {
@@ -727,15 +746,30 @@ public class WinPrincipal extends javax.swing.JFrame {
             }
         });
 
+        jLabel25.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel25.setText("Nombre: ");
 
+        LblNomVend.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+
+        jLabel26.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel26.setText("Apellido:");
 
+        LblApellVend.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+
+        jLabel27.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel27.setText("Direccion:");
 
+        LblDirVend.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+
+        jLabel28.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel28.setText("Celular:");
 
+        LblCelular.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+
+        jLabel29.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel29.setText("Teléfono:");
+
+        LblTelfVend.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
 
         javax.swing.GroupLayout PnlVerVendedoresLayout = new javax.swing.GroupLayout(PnlVerVendedores);
         PnlVerVendedores.setLayout(PnlVerVendedoresLayout);
@@ -755,36 +789,34 @@ public class WinPrincipal extends javax.swing.JFrame {
                                 .addGap(22, 22, 22)
                                 .addGroup(PnlVerVendedoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addGroup(PnlVerVendedoresLayout.createSequentialGroup()
-                                        .addComponent(jLabel29)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(LblTelfVend, javax.swing.GroupLayout.PREFERRED_SIZE, 344, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jLabel31, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                    .addGroup(PnlVerVendedoresLayout.createSequentialGroup()
-                                        .addComponent(jLabel28)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(LblCelular, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                    .addGroup(PnlVerVendedoresLayout.createSequentialGroup()
-                                        .addComponent(jLabel27)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(LblDirVend, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                    .addGroup(PnlVerVendedoresLayout.createSequentialGroup()
-                                        .addComponent(jLabel26)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(LblApellVend, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                    .addGroup(PnlVerVendedoresLayout.createSequentialGroup()
-                                        .addComponent(jLabel25)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(LblNomVend, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                    .addGroup(PnlVerVendedoresLayout.createSequentialGroup()
                                         .addComponent(jLabel24)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(LblClaveVend, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(58, 58, 58)
                                         .addComponent(BtnAnteriorVend)
                                         .addGap(18, 18, 18)
-                                        .addComponent(BtnSigVend)))))
-                        .addGap(0, 186, Short.MAX_VALUE)))
+                                        .addComponent(BtnSigVend))
+                                    .addGroup(PnlVerVendedoresLayout.createSequentialGroup()
+                                        .addGroup(PnlVerVendedoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                            .addComponent(jLabel29, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                            .addComponent(jLabel28, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                            .addComponent(jLabel27, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                            .addComponent(jLabel26, javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jLabel25, javax.swing.GroupLayout.Alignment.LEADING))
+                                        .addGroup(PnlVerVendedoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(PnlVerVendedoresLayout.createSequentialGroup()
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addGroup(PnlVerVendedoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                    .addComponent(LblNomVend, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                    .addComponent(LblApellVend, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                    .addComponent(LblDirVend, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                    .addComponent(LblCelular, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                                            .addGroup(PnlVerVendedoresLayout.createSequentialGroup()
+                                                .addGap(2, 2, 2)
+                                                .addComponent(LblTelfVend, javax.swing.GroupLayout.PREFERRED_SIZE, 344, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(jLabel31, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))))))
+                        .addGap(0, 175, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         PnlVerVendedoresLayout.setVerticalGroup(
@@ -822,10 +854,103 @@ public class WinPrincipal extends javax.swing.JFrame {
                         .addComponent(jLabel29)
                         .addComponent(LblTelfVend, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jLabel31, javax.swing.GroupLayout.PREFERRED_SIZE, 0, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(145, Short.MAX_VALUE))
+                .addContainerGap(130, Short.MAX_VALUE))
         );
 
         getContentPane().add(PnlVerVendedores, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 620, 370));
+
+        jLabel32.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel32.setText("Nuevo Vendedor");
+
+        jLabel33.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel33.setText("Nombre: ");
+
+        jLabel34.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel34.setText("Apellido:");
+
+        jLabel35.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel35.setText("Direccion:");
+
+        jLabel36.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel36.setText("Celular:");
+
+        jLabel37.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel37.setText("Teléfono:");
+
+        BtnGuardarVend.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        BtnGuardarVend.setText("Guardar");
+        BtnGuardarVend.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnGuardarVendActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout PnlNuevVendLayout = new javax.swing.GroupLayout(PnlNuevVend);
+        PnlNuevVend.setLayout(PnlNuevVendLayout);
+        PnlNuevVendLayout.setHorizontalGroup(
+            PnlNuevVendLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(PnlNuevVendLayout.createSequentialGroup()
+                .addComponent(jSeparator4)
+                .addContainerGap())
+            .addGroup(PnlNuevVendLayout.createSequentialGroup()
+                .addGap(118, 118, 118)
+                .addGroup(PnlNuevVendLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel33)
+                    .addComponent(jLabel34)
+                    .addComponent(jLabel35)
+                    .addComponent(jLabel36)
+                    .addComponent(jLabel37))
+                .addGap(136, 136, 136)
+                .addGroup(PnlNuevVendLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(txtNomVend)
+                    .addComponent(txtApellVend)
+                    .addComponent(txtDirVend)
+                    .addComponent(txtCelVend)
+                    .addComponent(txtTelfVend, javax.swing.GroupLayout.DEFAULT_SIZE, 213, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PnlNuevVendLayout.createSequentialGroup()
+                .addContainerGap(233, Short.MAX_VALUE)
+                .addGroup(PnlNuevVendLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PnlNuevVendLayout.createSequentialGroup()
+                        .addComponent(jLabel32)
+                        .addGap(211, 211, 211))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PnlNuevVendLayout.createSequentialGroup()
+                        .addComponent(BtnGuardarVend, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(245, 245, 245))))
+        );
+        PnlNuevVendLayout.setVerticalGroup(
+            PnlNuevVendLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(PnlNuevVendLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel32)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jSeparator4, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(PnlNuevVendLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel33)
+                    .addComponent(txtNomVend, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(PnlNuevVendLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel34)
+                    .addComponent(txtApellVend, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(PnlNuevVendLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel35)
+                    .addComponent(txtDirVend, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(PnlNuevVendLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel36)
+                    .addComponent(txtCelVend, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(PnlNuevVendLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel37)
+                    .addComponent(txtTelfVend, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(33, 33, 33)
+                .addComponent(BtnGuardarVend, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(44, Short.MAX_VALUE))
+        );
+
+        getContentPane().add(PnlNuevVend, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 620, 370));
 
         jMenu1.setText("Base de datos");
 
@@ -920,6 +1045,7 @@ public class WinPrincipal extends javax.swing.JFrame {
 
         archbd.setVisible(true);
         PnlVerVendedores.setVisible(false);
+        PnlNuevVend.setVisible(false);
 
         // TODO add your handling code here:
     }//GEN-LAST:event_jMenuItem1ActionPerformed
@@ -951,6 +1077,7 @@ public class WinPrincipal extends javax.swing.JFrame {
         PnlVerProductos.setVisible(false);
         PnlNuevoProducto.setVisible(true);
         PnlVerVendedores.setVisible(false);
+        PnlNuevVend.setVisible(false);
     }//GEN-LAST:event_jMenuItem4ActionPerformed
 
     private void BtnGenerarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnGenerarActionPerformed
@@ -983,6 +1110,7 @@ public class WinPrincipal extends javax.swing.JFrame {
         PnlVerProductos.setVisible(true);
         PnlNuevoProducto.setVisible(false);
         PnlVerVendedores.setVisible(false);
+        PnlNuevVend.setVisible(false);
     }//GEN-LAST:event_jMenuItem3ActionPerformed
 
     private void BtnGuardarProdActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnGuardarProdActionPerformed
@@ -1024,6 +1152,7 @@ public class WinPrincipal extends javax.swing.JFrame {
         PnlNuevoProducto.setVisible(false);
         PnlClienteVer.setVisible(false);
         PnlVerVendedores.setVisible(false);
+        PnlNuevVend.setVisible(false);
         /*
         pnlverclientes.setVisible(false);
         pnlabrirvendedor.setVisible(false);
@@ -1125,6 +1254,7 @@ public class WinPrincipal extends javax.swing.JFrame {
         PnlVerProductos.setVisible(false);
         archbd.setVisible(false);
         PnlNuevoProducto.setVisible(false);
+        PnlNuevVend.setVisible(false);
         /*
         pnlnuevoVendedor.setVisible(false);
         pnlabrirvendedor.setVisible(false);
@@ -1146,11 +1276,18 @@ public class WinPrincipal extends javax.swing.JFrame {
         PnlVerProductos.setVisible(false);
         PnlNuevoProducto.setVisible(false);
         archbd.setVisible(false);
+        PnlNuevVend.setVisible(false);
         
     }//GEN-LAST:event_ItmVerVendedoresActionPerformed
 
     private void ItmNuevoVendedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ItmNuevoVendedorActionPerformed
-        // TODO add your handling code here:
+        PnlNuevVend.setVisible(true);
+        PnlVerVendedores.setVisible(false);
+        PnlClienteVer.setVisible(false);
+        PnlClienteNuevo.setVisible(false);
+        PnlVerProductos.setVisible(false);
+        PnlNuevoProducto.setVisible(false);
+        archbd.setVisible(false);
     }//GEN-LAST:event_ItmNuevoVendedorActionPerformed
 
     private void BtnSigVendActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnSigVendActionPerformed
@@ -1168,8 +1305,32 @@ public class WinPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_BtnSigVendActionPerformed
 
     private void BtnAnteriorVendActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnAnteriorVendActionPerformed
-        // TODO add your handling code here:
+        try {
+            _vendedor.anterior();
+            LblClaveVend.setText(_vendedor._ventas().getString("claveVendedor"));
+            LblNomVend.setText(_vendedor._ventas().getString("nomVendedor"));
+            LblApellVend.setText(_vendedor._ventas().getString("apellVendedor"));
+            LblDirVend.setText(_vendedor._ventas().getString("dirVendedor"));
+            LblCelular.setText(_vendedor._ventas().getString("celVendedor"));
+            LblTelfVend.setText(_vendedor._ventas().getString("tlfVendedor"));
+        } catch (SQLException ex) {
+            Logger.getLogger(WinPrincipal.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_BtnAnteriorVendActionPerformed
+
+    private void BtnGuardarVendActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnGuardarVendActionPerformed
+        String n = txtNomVend.getText();
+        String a = txtApellVend.getText();
+        String d = txtDirVend.getText();
+        String f = txtCelVend.getText();
+        String c = txtTelfVend.getText();
+        try {
+            _vendedor.registrarVendedor(n, a, f, d, c);
+            JOptionPane.showMessageDialog(null, "Vendedor Guardao con Exito", "Vendedores", JOptionPane.WARNING_MESSAGE);
+        } catch (SQLException ex) {
+            Logger.getLogger(WinPrincipal.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_BtnGuardarVendActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1211,6 +1372,7 @@ public class WinPrincipal extends javax.swing.JFrame {
     private javax.swing.JButton BtnGenerar;
     private javax.swing.JButton BtnGuardarNvoCli;
     private javax.swing.JButton BtnGuardarProd;
+    private javax.swing.JButton BtnGuardarVend;
     private javax.swing.JButton BtnSigVend;
     private javax.swing.JMenuItem ItmNuevoClientes;
     private javax.swing.JMenuItem ItmNuevoVendedor;
@@ -1227,6 +1389,7 @@ public class WinPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenu MnuVendedores;
     private javax.swing.JPanel PnlClienteNuevo;
     private javax.swing.JPanel PnlClienteVer;
+    private javax.swing.JPanel PnlNuevVend;
     private javax.swing.JPanel PnlNuevoProducto;
     private javax.swing.JPanel PnlVerProductos;
     private javax.swing.JPanel PnlVerVendedores;
@@ -1266,6 +1429,12 @@ public class WinPrincipal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel33;
+    private javax.swing.JLabel jLabel34;
+    private javax.swing.JLabel jLabel35;
+    private javax.swing.JLabel jLabel36;
+    private javax.swing.JLabel jLabel37;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
@@ -1288,6 +1457,7 @@ public class WinPrincipal extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
+    private javax.swing.JSeparator jSeparator4;
     private javax.swing.JLabel lblapellido1;
     private javax.swing.JLabel lblclave1;
     private javax.swing.JLabel lblfecha;
@@ -1295,6 +1465,11 @@ public class WinPrincipal extends javax.swing.JFrame {
     private javax.swing.JLabel lblnombre1;
     private javax.swing.JRadioButton rbtnclave;
     private javax.swing.JTable tablaProd;
+    private javax.swing.JTextField txtApellVend;
+    private javax.swing.JTextField txtCelVend;
+    private javax.swing.JTextField txtDirVend;
+    private javax.swing.JTextField txtNomVend;
+    private javax.swing.JTextField txtTelfVend;
     private javax.swing.JTextField txtbusca;
     private javax.swing.JTextField txtcantidad;
     private javax.swing.JTextField txtceluc;
