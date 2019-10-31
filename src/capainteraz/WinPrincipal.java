@@ -30,6 +30,7 @@ public class WinPrincipal extends javax.swing.JFrame {
         PnlNuevoProducto.setVisible(false);
         PnlClienteNuevo.setVisible(false);
         PnlClienteVer.setVisible(false);
+        PnlVerVendedores.setVisible(false);
     }
 
     /**
@@ -41,6 +42,7 @@ public class WinPrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel30 = new javax.swing.JLabel();
         archbd = new javax.swing.JFileChooser();
         PnlVerProductos = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
@@ -105,6 +107,24 @@ public class WinPrincipal extends javax.swing.JFrame {
         BtnGuardarProd = new javax.swing.JButton();
         lblmensaj = new javax.swing.JLabel();
         jPanel6 = new javax.swing.JPanel();
+        PnlVerVendedores = new javax.swing.JPanel();
+        jLabel23 = new javax.swing.JLabel();
+        jSeparator3 = new javax.swing.JSeparator();
+        jLabel24 = new javax.swing.JLabel();
+        LblClaveVend = new javax.swing.JLabel();
+        BtnAnteriorVend = new javax.swing.JButton();
+        BtnSigVend = new javax.swing.JButton();
+        jLabel25 = new javax.swing.JLabel();
+        LblNomVend = new javax.swing.JLabel();
+        jLabel26 = new javax.swing.JLabel();
+        LblApellVend = new javax.swing.JLabel();
+        jLabel27 = new javax.swing.JLabel();
+        LblDirVend = new javax.swing.JLabel();
+        jLabel28 = new javax.swing.JLabel();
+        LblCelular = new javax.swing.JLabel();
+        jLabel29 = new javax.swing.JLabel();
+        jLabel31 = new javax.swing.JLabel();
+        LblTelfVend = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
@@ -118,6 +138,8 @@ public class WinPrincipal extends javax.swing.JFrame {
         MnuVendedores = new javax.swing.JMenu();
         ItmVerVendedores = new javax.swing.JMenuItem();
         ItmNuevoVendedor = new javax.swing.JMenuItem();
+
+        jLabel30.setText("jLabel30");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(102, 102, 102));
@@ -685,6 +707,126 @@ public class WinPrincipal extends javax.swing.JFrame {
 
         getContentPane().add(PnlNuevoProducto, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 620, 370));
 
+        jLabel23.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel23.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel23.setText("VENDEDORES");
+
+        jLabel24.setText("Clave: ");
+
+        BtnAnteriorVend.setText("Anterior");
+        BtnAnteriorVend.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnAnteriorVendActionPerformed(evt);
+            }
+        });
+
+        BtnSigVend.setText("Siguiente");
+        BtnSigVend.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnSigVendActionPerformed(evt);
+            }
+        });
+
+        jLabel25.setText("Nombre: ");
+
+        jLabel26.setText("Apellido:");
+
+        jLabel27.setText("Direccion:");
+
+        jLabel28.setText("Celular:");
+
+        jLabel29.setText("Teléfono:");
+
+        javax.swing.GroupLayout PnlVerVendedoresLayout = new javax.swing.GroupLayout(PnlVerVendedores);
+        PnlVerVendedores.setLayout(PnlVerVendedoresLayout);
+        PnlVerVendedoresLayout.setHorizontalGroup(
+            PnlVerVendedoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(PnlVerVendedoresLayout.createSequentialGroup()
+                .addGroup(PnlVerVendedoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(PnlVerVendedoresLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jSeparator3))
+                    .addGroup(PnlVerVendedoresLayout.createSequentialGroup()
+                        .addGroup(PnlVerVendedoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(PnlVerVendedoresLayout.createSequentialGroup()
+                                .addGap(224, 224, 224)
+                                .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(PnlVerVendedoresLayout.createSequentialGroup()
+                                .addGap(22, 22, 22)
+                                .addGroup(PnlVerVendedoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addGroup(PnlVerVendedoresLayout.createSequentialGroup()
+                                        .addComponent(jLabel29)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(LblTelfVend, javax.swing.GroupLayout.PREFERRED_SIZE, 344, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jLabel31, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                    .addGroup(PnlVerVendedoresLayout.createSequentialGroup()
+                                        .addComponent(jLabel28)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(LblCelular, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                    .addGroup(PnlVerVendedoresLayout.createSequentialGroup()
+                                        .addComponent(jLabel27)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(LblDirVend, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                    .addGroup(PnlVerVendedoresLayout.createSequentialGroup()
+                                        .addComponent(jLabel26)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(LblApellVend, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                    .addGroup(PnlVerVendedoresLayout.createSequentialGroup()
+                                        .addComponent(jLabel25)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(LblNomVend, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                    .addGroup(PnlVerVendedoresLayout.createSequentialGroup()
+                                        .addComponent(jLabel24)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(LblClaveVend, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(58, 58, 58)
+                                        .addComponent(BtnAnteriorVend)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(BtnSigVend)))))
+                        .addGap(0, 186, Short.MAX_VALUE)))
+                .addContainerGap())
+        );
+        PnlVerVendedoresLayout.setVerticalGroup(
+            PnlVerVendedoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(PnlVerVendedoresLayout.createSequentialGroup()
+                .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jSeparator3, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(PnlVerVendedoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel24, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(PnlVerVendedoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(BtnAnteriorVend)
+                        .addComponent(BtnSigVend))
+                    .addComponent(LblClaveVend, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(PnlVerVendedoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel25)
+                    .addComponent(LblNomVend, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(PnlVerVendedoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel26)
+                    .addComponent(LblApellVend, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(PnlVerVendedoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel27)
+                    .addComponent(LblDirVend, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(PnlVerVendedoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabel28, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(LblCelular, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(PnlVerVendedoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(PnlVerVendedoresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel29)
+                        .addComponent(LblTelfVend, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabel31, javax.swing.GroupLayout.PREFERRED_SIZE, 0, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(145, Short.MAX_VALUE))
+        );
+
+        getContentPane().add(PnlVerVendedores, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 620, 370));
+
         jMenu1.setText("Base de datos");
 
         jMenuItem1.setText("abrir ");
@@ -777,6 +919,7 @@ public class WinPrincipal extends javax.swing.JFrame {
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
 
         archbd.setVisible(true);
+        PnlVerVendedores.setVisible(false);
 
         // TODO add your handling code here:
     }//GEN-LAST:event_jMenuItem1ActionPerformed
@@ -807,6 +950,7 @@ public class WinPrincipal extends javax.swing.JFrame {
         archbd.setVisible(false);
         PnlVerProductos.setVisible(false);
         PnlNuevoProducto.setVisible(true);
+        PnlVerVendedores.setVisible(false);
     }//GEN-LAST:event_jMenuItem4ActionPerformed
 
     private void BtnGenerarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnGenerarActionPerformed
@@ -838,6 +982,7 @@ public class WinPrincipal extends javax.swing.JFrame {
         archbd.setVisible(false);
         PnlVerProductos.setVisible(true);
         PnlNuevoProducto.setVisible(false);
+        PnlVerVendedores.setVisible(false);
     }//GEN-LAST:event_jMenuItem3ActionPerformed
 
     private void BtnGuardarProdActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnGuardarProdActionPerformed
@@ -878,6 +1023,7 @@ public class WinPrincipal extends javax.swing.JFrame {
         archbd.setVisible(false);
         PnlNuevoProducto.setVisible(false);
         PnlClienteVer.setVisible(false);
+        PnlVerVendedores.setVisible(false);
         /*
         pnlverclientes.setVisible(false);
         pnlabrirvendedor.setVisible(false);
@@ -974,7 +1120,7 @@ public class WinPrincipal extends javax.swing.JFrame {
 
     private void ItmVerClientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ItmVerClientesActionPerformed
         PnlClienteVer.setVisible(true);
-        
+        PnlVerVendedores.setVisible(false);
         PnlClienteNuevo.setVisible(false);
         PnlVerProductos.setVisible(false);
         archbd.setVisible(false);
@@ -994,12 +1140,36 @@ public class WinPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_ItmVerClientesActionPerformed
 
     private void ItmVerVendedoresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ItmVerVendedoresActionPerformed
-        // TODO add your handling code here:
+        PnlVerVendedores.setVisible(true);
+        PnlClienteVer.setVisible(false);
+        PnlClienteNuevo.setVisible(false);
+        PnlVerProductos.setVisible(false);
+        PnlNuevoProducto.setVisible(false);
+        archbd.setVisible(false);
+        
     }//GEN-LAST:event_ItmVerVendedoresActionPerformed
 
     private void ItmNuevoVendedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ItmNuevoVendedorActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_ItmNuevoVendedorActionPerformed
+
+    private void BtnSigVendActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnSigVendActionPerformed
+        try {
+            _vendedor.siguiente();
+            LblClaveVend.setText(_vendedor._ventas().getString("claveVendedor"));
+            LblNomVend.setText(_vendedor._ventas().getString("nomVendedor"));
+            LblApellVend.setText(_vendedor._ventas().getString("apellVendedor"));
+            LblDirVend.setText(_vendedor._ventas().getString("dirVendedor"));
+            LblCelular.setText(_vendedor._ventas().getString("celVendedor"));
+            LblTelfVend.setText(_vendedor._ventas().getString("tlfVendedor"));
+        } catch (SQLException ex) {
+            Logger.getLogger(WinPrincipal.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_BtnSigVendActionPerformed
+
+    private void BtnAnteriorVendActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnAnteriorVendActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BtnAnteriorVendActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1037,20 +1207,29 @@ public class WinPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton BtnAnteriorVend;
     private javax.swing.JButton BtnGenerar;
     private javax.swing.JButton BtnGuardarNvoCli;
     private javax.swing.JButton BtnGuardarProd;
+    private javax.swing.JButton BtnSigVend;
     private javax.swing.JMenuItem ItmNuevoClientes;
     private javax.swing.JMenuItem ItmNuevoVendedor;
     private javax.swing.JMenuItem ItmVerClientes;
     private javax.swing.JMenuItem ItmVerVendedores;
+    private javax.swing.JLabel LblApellVend;
+    private javax.swing.JLabel LblCelular;
+    private javax.swing.JLabel LblClaveVend;
+    private javax.swing.JLabel LblDirVend;
     private javax.swing.JLabel LblMensaje;
+    private javax.swing.JLabel LblNomVend;
+    private javax.swing.JLabel LblTelfVend;
     private javax.swing.JMenu MnuClientes;
     private javax.swing.JMenu MnuVendedores;
     private javax.swing.JPanel PnlClienteNuevo;
     private javax.swing.JPanel PnlClienteVer;
     private javax.swing.JPanel PnlNuevoProducto;
     private javax.swing.JPanel PnlVerProductos;
+    private javax.swing.JPanel PnlVerVendedores;
     private javax.swing.JTextField TxtApellCli;
     private javax.swing.JTextField TxtCellCli;
     private javax.swing.JTextField TxtDirCli;
@@ -1077,7 +1256,16 @@ public class WinPrincipal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel31;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
@@ -1099,6 +1287,7 @@ public class WinPrincipal extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
+    private javax.swing.JSeparator jSeparator3;
     private javax.swing.JLabel lblapellido1;
     private javax.swing.JLabel lblclave1;
     private javax.swing.JLabel lblfecha;
