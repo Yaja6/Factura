@@ -115,6 +115,9 @@ public class WinPrincipal extends javax.swing.JFrame {
         MnuClientes = new javax.swing.JMenu();
         ItmVerClientes = new javax.swing.JMenuItem();
         ItmNuevoClientes = new javax.swing.JMenuItem();
+        MnuVendedores = new javax.swing.JMenu();
+        ItmVerVendedores = new javax.swing.JMenuItem();
+        ItmNuevoVendedor = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(102, 102, 102));
@@ -742,6 +745,26 @@ public class WinPrincipal extends javax.swing.JFrame {
 
         jMenuBar1.add(MnuClientes);
 
+        MnuVendedores.setText("Vendedores");
+
+        ItmVerVendedores.setText("Ver");
+        ItmVerVendedores.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ItmVerVendedoresActionPerformed(evt);
+            }
+        });
+        MnuVendedores.add(ItmVerVendedores);
+
+        ItmNuevoVendedor.setText("Nuevo");
+        ItmNuevoVendedor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ItmNuevoVendedorActionPerformed(evt);
+            }
+        });
+        MnuVendedores.add(ItmNuevoVendedor);
+
+        jMenuBar1.add(MnuVendedores);
+
         setJMenuBar(jMenuBar1);
 
         pack();
@@ -970,6 +993,14 @@ public class WinPrincipal extends javax.swing.JFrame {
         pnlVerProductos.setVisible(false);*/
     }//GEN-LAST:event_ItmVerClientesActionPerformed
 
+    private void ItmVerVendedoresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ItmVerVendedoresActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ItmVerVendedoresActionPerformed
+
+    private void ItmNuevoVendedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ItmNuevoVendedorActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ItmNuevoVendedorActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -1010,9 +1041,12 @@ public class WinPrincipal extends javax.swing.JFrame {
     private javax.swing.JButton BtnGuardarNvoCli;
     private javax.swing.JButton BtnGuardarProd;
     private javax.swing.JMenuItem ItmNuevoClientes;
+    private javax.swing.JMenuItem ItmNuevoVendedor;
     private javax.swing.JMenuItem ItmVerClientes;
+    private javax.swing.JMenuItem ItmVerVendedores;
     private javax.swing.JLabel LblMensaje;
     private javax.swing.JMenu MnuClientes;
+    private javax.swing.JMenu MnuVendedores;
     private javax.swing.JPanel PnlClienteNuevo;
     private javax.swing.JPanel PnlClienteVer;
     private javax.swing.JPanel PnlNuevoProducto;
