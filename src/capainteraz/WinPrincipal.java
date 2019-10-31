@@ -28,6 +28,8 @@ public class WinPrincipal extends javax.swing.JFrame {
         archbd.setVisible(false);
         PnlVerProductos.setVisible(false);
         PnlNuevoProducto.setVisible(false);
+        PnlClienteNuevo.setVisible(false);
+        PnlClienteVer.setVisible(false);
     }
 
     /**
@@ -39,7 +41,6 @@ public class WinPrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel5 = new javax.swing.JPanel();
         archbd = new javax.swing.JFileChooser();
         PnlVerProductos = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
@@ -48,21 +49,6 @@ public class WinPrincipal extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         tablaProd = new javax.swing.JTable();
         BtnGenerar = new javax.swing.JButton();
-        PnlNuevoProducto = new javax.swing.JPanel();
-        jPanel3 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
-        jPanel4 = new javax.swing.JPanel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        txtnomP = new javax.swing.JTextField();
-        txtprecio = new javax.swing.JTextField();
-        txtcantidad = new javax.swing.JTextField();
-        txtunidad = new javax.swing.JTextField();
-        BtnGuardarProd = new javax.swing.JButton();
-        lblmensaj = new javax.swing.JLabel();
-        jPanel6 = new javax.swing.JPanel();
         PnlClienteNuevo = new javax.swing.JPanel();
         jSeparator1 = new javax.swing.JSeparator();
         jLabel7 = new javax.swing.JLabel();
@@ -80,6 +66,45 @@ public class WinPrincipal extends javax.swing.JFrame {
         TxtMailCli = new javax.swing.JTextField();
         BtnGuardarNvoCli = new javax.swing.JButton();
         LblMensaje = new javax.swing.JLabel();
+        PnlClienteVer = new javax.swing.JPanel();
+        jLabel14 = new javax.swing.JLabel();
+        jSeparator2 = new javax.swing.JSeparator();
+        jLabel15 = new javax.swing.JLabel();
+        lblclave1 = new javax.swing.JLabel();
+        btnactualizar = new javax.swing.JButton();
+        btnanterior1 = new javax.swing.JButton();
+        btnsig1 = new javax.swing.JButton();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
+        jLabel22 = new javax.swing.JLabel();
+        jButton4 = new javax.swing.JButton();
+        rbtnclave = new javax.swing.JRadioButton();
+        lblnombre1 = new javax.swing.JLabel();
+        lblapellido1 = new javax.swing.JLabel();
+        lblfecha = new javax.swing.JLabel();
+        txtdirec = new javax.swing.JTextField();
+        txtceluc = new javax.swing.JTextField();
+        txtemail1 = new javax.swing.JTextField();
+        txtbusca = new javax.swing.JTextField();
+        PnlNuevoProducto = new javax.swing.JPanel();
+        jPanel3 = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
+        jPanel4 = new javax.swing.JPanel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        txtnomP = new javax.swing.JTextField();
+        txtprecio = new javax.swing.JTextField();
+        txtcantidad = new javax.swing.JTextField();
+        txtunidad = new javax.swing.JTextField();
+        BtnGuardarProd = new javax.swing.JButton();
+        lblmensaj = new javax.swing.JLabel();
+        jPanel6 = new javax.swing.JPanel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
@@ -90,18 +115,6 @@ public class WinPrincipal extends javax.swing.JFrame {
         MnuClientes = new javax.swing.JMenu();
         ItmVerClientes = new javax.swing.JMenuItem();
         ItmNuevoClientes = new javax.swing.JMenuItem();
-        ItmEliminarClientes = new javax.swing.JMenuItem();
-
-        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
-        jPanel5.setLayout(jPanel5Layout);
-        jPanel5Layout.setHorizontalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
-        );
-        jPanel5Layout.setVerticalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
-        );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(102, 102, 102));
@@ -199,6 +212,327 @@ public class WinPrincipal extends javax.swing.JFrame {
         );
 
         getContentPane().add(PnlVerProductos, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 620, 360));
+
+        PnlClienteNuevo.setBackground(new java.awt.Color(204, 204, 255));
+
+        jLabel7.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel7.setText("Nuevo Cliente");
+
+        jLabel8.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel8.setText("Nombre: ");
+
+        jLabel9.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel9.setText("Apellido:");
+
+        jLabel10.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel10.setText("Fecha de Nacimiento:");
+
+        jLabel11.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel11.setText("Direccion:");
+
+        jLabel12.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel12.setText("Celular:");
+
+        jLabel13.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel13.setText("E-mail:");
+
+        BtnGuardarNvoCli.setText("Guardar");
+        BtnGuardarNvoCli.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnGuardarNvoCliActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout PnlClienteNuevoLayout = new javax.swing.GroupLayout(PnlClienteNuevo);
+        PnlClienteNuevo.setLayout(PnlClienteNuevoLayout);
+        PnlClienteNuevoLayout.setHorizontalGroup(
+            PnlClienteNuevoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jSeparator1, javax.swing.GroupLayout.Alignment.TRAILING)
+            .addGroup(PnlClienteNuevoLayout.createSequentialGroup()
+                .addGroup(PnlClienteNuevoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(PnlClienteNuevoLayout.createSequentialGroup()
+                        .addGap(233, 233, 233)
+                        .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(PnlClienteNuevoLayout.createSequentialGroup()
+                        .addGap(118, 118, 118)
+                        .addGroup(PnlClienteNuevoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel8)
+                            .addComponent(jLabel9)
+                            .addComponent(jLabel10)
+                            .addComponent(jLabel11)
+                            .addComponent(jLabel12)
+                            .addComponent(jLabel13))
+                        .addGap(38, 38, 38)
+                        .addGroup(PnlClienteNuevoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(TxtMailCli, javax.swing.GroupLayout.PREFERRED_SIZE, 243, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(TxtCellCli, javax.swing.GroupLayout.PREFERRED_SIZE, 243, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(TxtDirCli, javax.swing.GroupLayout.PREFERRED_SIZE, 243, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(TxtFechCli, javax.swing.GroupLayout.PREFERRED_SIZE, 243, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(TxtApellCli, javax.swing.GroupLayout.PREFERRED_SIZE, 243, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(TxtNomCli, javax.swing.GroupLayout.PREFERRED_SIZE, 243, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(PnlClienteNuevoLayout.createSequentialGroup()
+                        .addGap(255, 255, 255)
+                        .addComponent(BtnGuardarNvoCli))
+                    .addGroup(PnlClienteNuevoLayout.createSequentialGroup()
+                        .addGap(147, 147, 147)
+                        .addComponent(LblMensaje, javax.swing.GroupLayout.PREFERRED_SIZE, 290, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(93, Short.MAX_VALUE))
+        );
+        PnlClienteNuevoLayout.setVerticalGroup(
+            PnlClienteNuevoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(PnlClienteNuevoLayout.createSequentialGroup()
+                .addGap(28, 28, 28)
+                .addComponent(jLabel7)
+                .addGap(18, 18, 18)
+                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(PnlClienteNuevoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel8)
+                    .addComponent(TxtNomCli, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(PnlClienteNuevoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel9)
+                    .addComponent(TxtApellCli, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(PnlClienteNuevoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel10)
+                    .addComponent(TxtFechCli, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(PnlClienteNuevoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel11)
+                    .addComponent(TxtDirCli, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(PnlClienteNuevoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel12)
+                    .addComponent(TxtCellCli, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(PnlClienteNuevoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel13)
+                    .addComponent(TxtMailCli, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(BtnGuardarNvoCli)
+                .addGap(18, 18, 18)
+                .addComponent(LblMensaje, javax.swing.GroupLayout.DEFAULT_SIZE, 31, Short.MAX_VALUE)
+                .addGap(4, 4, 4))
+        );
+
+        getContentPane().add(PnlClienteNuevo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
+        jLabel14.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel14.setText("Ver Cliente");
+
+        jLabel15.setFont(new java.awt.Font("Segoe UI Symbol", 1, 12)); // NOI18N
+        jLabel15.setText("Clave:");
+
+        lblclave1.setFont(new java.awt.Font("Segoe UI Symbol", 0, 14)); // NOI18N
+        lblclave1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+
+        btnactualizar.setBackground(new java.awt.Color(102, 255, 102));
+        btnactualizar.setFont(new java.awt.Font("Segoe UI Symbol", 0, 14)); // NOI18N
+        btnactualizar.setText("Actualizar");
+        btnactualizar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnactualizarActionPerformed(evt);
+            }
+        });
+
+        btnanterior1.setText("Anterior");
+        btnanterior1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnanterior1ActionPerformed(evt);
+            }
+        });
+
+        btnsig1.setText("Siguiente");
+        btnsig1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnsig1ActionPerformed(evt);
+            }
+        });
+
+        jLabel16.setFont(new java.awt.Font("Segoe UI Symbol", 1, 12)); // NOI18N
+        jLabel16.setText("Nombre: ");
+
+        jLabel17.setFont(new java.awt.Font("Segoe UI Symbol", 1, 12)); // NOI18N
+        jLabel17.setText("Apellido: ");
+
+        jLabel18.setFont(new java.awt.Font("Segoe UI Symbol", 1, 12)); // NOI18N
+        jLabel18.setText("Fecha de Nacimiento:");
+
+        jLabel19.setFont(new java.awt.Font("Segoe UI Symbol", 1, 12)); // NOI18N
+        jLabel19.setText("Direccion:");
+
+        jLabel20.setFont(new java.awt.Font("Segoe UI Symbol", 1, 12)); // NOI18N
+        jLabel20.setText("Celular:");
+
+        jLabel21.setFont(new java.awt.Font("Segoe UI Symbol", 1, 12)); // NOI18N
+        jLabel21.setText("E-mail:");
+
+        jLabel22.setFont(new java.awt.Font("Segoe UI Symbol", 1, 12)); // NOI18N
+        jLabel22.setText("Buscar:");
+
+        jButton4.setText("Buscar");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
+
+        rbtnclave.setBackground(new java.awt.Color(204, 255, 204));
+        rbtnclave.setFont(new java.awt.Font("Segoe UI Symbol", 0, 14)); // NOI18N
+        rbtnclave.setText("Por clave");
+        rbtnclave.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbtnclaveActionPerformed(evt);
+            }
+        });
+
+        lblnombre1.setFont(new java.awt.Font("Segoe UI Symbol", 0, 14)); // NOI18N
+        lblnombre1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+
+        lblapellido1.setFont(new java.awt.Font("Segoe UI Symbol", 0, 14)); // NOI18N
+        lblapellido1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+
+        lblfecha.setFont(new java.awt.Font("Segoe UI Symbol", 0, 14)); // NOI18N
+        lblfecha.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+
+        txtdirec.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtdirecActionPerformed(evt);
+            }
+        });
+
+        txtceluc.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtcelucActionPerformed(evt);
+            }
+        });
+
+        txtemail1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtemail1ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout PnlClienteVerLayout = new javax.swing.GroupLayout(PnlClienteVer);
+        PnlClienteVer.setLayout(PnlClienteVerLayout);
+        PnlClienteVerLayout.setHorizontalGroup(
+            PnlClienteVerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PnlClienteVerLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(230, 230, 230))
+            .addGroup(PnlClienteVerLayout.createSequentialGroup()
+                .addComponent(jSeparator2)
+                .addContainerGap())
+            .addGroup(PnlClienteVerLayout.createSequentialGroup()
+                .addGap(63, 63, 63)
+                .addGroup(PnlClienteVerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(PnlClienteVerLayout.createSequentialGroup()
+                        .addComponent(jLabel22)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButton4)
+                        .addGap(96, 96, 96))
+                    .addGroup(PnlClienteVerLayout.createSequentialGroup()
+                        .addGroup(PnlClienteVerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(PnlClienteVerLayout.createSequentialGroup()
+                                .addGroup(PnlClienteVerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel19)
+                                    .addComponent(jLabel20)
+                                    .addComponent(jLabel21)
+                                    .addComponent(jLabel16))
+                                .addGroup(PnlClienteVerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(PnlClienteVerLayout.createSequentialGroup()
+                                        .addGap(74, 74, 74)
+                                        .addComponent(lblnombre1, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(PnlClienteVerLayout.createSequentialGroup()
+                                        .addGap(75, 75, 75)
+                                        .addGroup(PnlClienteVerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(PnlClienteVerLayout.createSequentialGroup()
+                                                .addComponent(txtbusca, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(0, 0, Short.MAX_VALUE))
+                                            .addComponent(txtceluc)
+                                            .addComponent(txtdirec)
+                                            .addComponent(txtemail1)))))
+                            .addGroup(PnlClienteVerLayout.createSequentialGroup()
+                                .addGroup(PnlClienteVerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel17)
+                                    .addComponent(jLabel18))
+                                .addGap(2, 2, 2)
+                                .addGroup(PnlClienteVerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(lblfecha, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(lblapellido1, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addGap(104, 104, 104))))
+            .addGroup(PnlClienteVerLayout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addGroup(PnlClienteVerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(rbtnclave)
+                    .addGroup(PnlClienteVerLayout.createSequentialGroup()
+                        .addComponent(jLabel15)
+                        .addGap(18, 18, 18)
+                        .addComponent(lblclave1, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(59, 59, 59)
+                        .addComponent(btnanterior1)))
+                .addGap(18, 18, 18)
+                .addComponent(btnsig1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 46, Short.MAX_VALUE)
+                .addComponent(btnactualizar)
+                .addGap(38, 38, 38))
+        );
+        PnlClienteVerLayout.setVerticalGroup(
+            PnlClienteVerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(PnlClienteVerLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(PnlClienteVerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(PnlClienteVerLayout.createSequentialGroup()
+                        .addComponent(jLabel14)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(PnlClienteVerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblclave1, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(PnlClienteVerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(btnanterior1)
+                                .addComponent(btnsig1)
+                                .addComponent(btnactualizar)))
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lblnombre1, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(PnlClienteVerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(PnlClienteVerLayout.createSequentialGroup()
+                        .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(PnlClienteVerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtdirec, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(PnlClienteVerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel20, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtceluc, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(PnlClienteVerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtemail1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(PnlClienteVerLayout.createSequentialGroup()
+                        .addComponent(lblapellido1, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(lblfecha, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(PnlClienteVerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(PnlClienteVerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jButton4))
+                    .addComponent(txtbusca, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(rbtnclave)
+                .addContainerGap(17, Short.MAX_VALUE))
+        );
+
+        getContentPane().add(PnlClienteVer, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 620, 370));
 
         PnlNuevoProducto.setBackground(new java.awt.Color(102, 102, 102));
 
@@ -328,107 +662,6 @@ public class WinPrincipal extends javax.swing.JFrame {
             .addGap(0, 56, Short.MAX_VALUE)
         );
 
-        jLabel7.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel7.setText("Nuevo Cliente");
-
-        jLabel8.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel8.setText("Nombre: ");
-
-        jLabel9.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel9.setText("Apellido:");
-
-        jLabel10.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel10.setText("Fecha de Nacimiento:");
-
-        jLabel11.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel11.setText("Direccion:");
-
-        jLabel12.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel12.setText("Celular:");
-
-        jLabel13.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel13.setText("E-mail:");
-
-        BtnGuardarNvoCli.setText("Guardar");
-        BtnGuardarNvoCli.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BtnGuardarNvoCliActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout PnlClienteNuevoLayout = new javax.swing.GroupLayout(PnlClienteNuevo);
-        PnlClienteNuevo.setLayout(PnlClienteNuevoLayout);
-        PnlClienteNuevoLayout.setHorizontalGroup(
-            PnlClienteNuevoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jSeparator1, javax.swing.GroupLayout.Alignment.TRAILING)
-            .addGroup(PnlClienteNuevoLayout.createSequentialGroup()
-                .addGroup(PnlClienteNuevoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(PnlClienteNuevoLayout.createSequentialGroup()
-                        .addGap(233, 233, 233)
-                        .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(PnlClienteNuevoLayout.createSequentialGroup()
-                        .addGap(118, 118, 118)
-                        .addGroup(PnlClienteNuevoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel8)
-                            .addComponent(jLabel9)
-                            .addComponent(jLabel10)
-                            .addComponent(jLabel11)
-                            .addComponent(jLabel12)
-                            .addComponent(jLabel13))
-                        .addGap(38, 38, 38)
-                        .addGroup(PnlClienteNuevoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(TxtMailCli, javax.swing.GroupLayout.PREFERRED_SIZE, 243, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(TxtCellCli, javax.swing.GroupLayout.PREFERRED_SIZE, 243, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(TxtDirCli, javax.swing.GroupLayout.PREFERRED_SIZE, 243, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(TxtFechCli, javax.swing.GroupLayout.PREFERRED_SIZE, 243, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(TxtApellCli, javax.swing.GroupLayout.PREFERRED_SIZE, 243, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(TxtNomCli, javax.swing.GroupLayout.PREFERRED_SIZE, 243, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(PnlClienteNuevoLayout.createSequentialGroup()
-                        .addGap(255, 255, 255)
-                        .addComponent(BtnGuardarNvoCli))
-                    .addGroup(PnlClienteNuevoLayout.createSequentialGroup()
-                        .addGap(147, 147, 147)
-                        .addComponent(LblMensaje, javax.swing.GroupLayout.PREFERRED_SIZE, 290, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(93, Short.MAX_VALUE))
-        );
-        PnlClienteNuevoLayout.setVerticalGroup(
-            PnlClienteNuevoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(PnlClienteNuevoLayout.createSequentialGroup()
-                .addGap(28, 28, 28)
-                .addComponent(jLabel7)
-                .addGap(18, 18, 18)
-                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addGroup(PnlClienteNuevoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel8)
-                    .addComponent(TxtNomCli, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(PnlClienteNuevoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel9)
-                    .addComponent(TxtApellCli, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(PnlClienteNuevoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel10)
-                    .addComponent(TxtFechCli, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(PnlClienteNuevoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel11)
-                    .addComponent(TxtDirCli, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(PnlClienteNuevoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel12)
-                    .addComponent(TxtCellCli, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(PnlClienteNuevoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel13)
-                    .addComponent(TxtMailCli, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addComponent(BtnGuardarNvoCli)
-                .addGap(18, 18, 18)
-                .addComponent(LblMensaje, javax.swing.GroupLayout.DEFAULT_SIZE, 31, Short.MAX_VALUE)
-                .addGap(4, 4, 4))
-        );
-
         javax.swing.GroupLayout PnlNuevoProductoLayout = new javax.swing.GroupLayout(PnlNuevoProducto);
         PnlNuevoProducto.setLayout(PnlNuevoProductoLayout);
         PnlNuevoProductoLayout.setHorizontalGroup(
@@ -436,8 +669,6 @@ public class WinPrincipal extends javax.swing.JFrame {
             .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(PnlNuevoProductoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(PnlClienteNuevo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         PnlNuevoProductoLayout.setVerticalGroup(
             PnlNuevoProductoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -447,10 +678,6 @@ public class WinPrincipal extends javax.swing.JFrame {
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(PnlNuevoProductoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(PnlNuevoProductoLayout.createSequentialGroup()
-                    .addComponent(PnlClienteNuevo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 58, Short.MAX_VALUE)))
         );
 
         getContentPane().add(PnlNuevoProducto, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 620, 370));
@@ -498,13 +725,20 @@ public class WinPrincipal extends javax.swing.JFrame {
         MnuClientes.setText("Clientes");
 
         ItmVerClientes.setText("Ver");
+        ItmVerClientes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ItmVerClientesActionPerformed(evt);
+            }
+        });
         MnuClientes.add(ItmVerClientes);
 
         ItmNuevoClientes.setText("Nuevo");
+        ItmNuevoClientes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ItmNuevoClientesActionPerformed(evt);
+            }
+        });
         MnuClientes.add(ItmNuevoClientes);
-
-        ItmEliminarClientes.setText("Eliminar");
-        MnuClientes.add(ItmEliminarClientes);
 
         jMenuBar1.add(MnuClientes);
 
@@ -615,6 +849,127 @@ public class WinPrincipal extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_BtnGuardarNvoCliActionPerformed
 
+    private void ItmNuevoClientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ItmNuevoClientesActionPerformed
+        PnlClienteNuevo.setVisible(true);
+        PnlVerProductos.setVisible(false);
+        archbd.setVisible(false);
+        PnlNuevoProducto.setVisible(false);
+        PnlClienteVer.setVisible(false);
+        /*
+        pnlverclientes.setVisible(false);
+        pnlabrirvendedor.setVisible(false);
+        
+        pnlacercade.setVisible(false);
+        pnleliminarCliente.setVisible(false);
+        pnlnuevoVendedor.setVisible(false);
+        pnleliminarVendedor.setVisible(false);
+        pnlfactura.setVisible(false);
+        pnlVerProductos.setVisible(false);*/
+    }//GEN-LAST:event_ItmNuevoClientesActionPerformed
+
+    private void btnactualizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnactualizarActionPerformed
+        String d = txtdirec.getText();
+
+        String c = txtceluc.getText();
+        String e = txtemail1.getText();
+        int g;
+        try {
+            g = _cliente._ventas().getInt("ClaveCliente");
+            _cliente.actualizarCliente(d, c, e, g);
+        } catch (SQLException ex) {
+            Logger.getLogger(WinPrincipal.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_btnactualizarActionPerformed
+
+    private void rbtnclaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtnclaveActionPerformed
+
+    }//GEN-LAST:event_rbtnclaveActionPerformed
+
+    private void txtdirecActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtdirecActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtdirecActionPerformed
+
+    private void txtcelucActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtcelucActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtcelucActionPerformed
+
+    private void txtemail1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtemail1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtemail1ActionPerformed
+
+    private void btnanterior1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnanterior1ActionPerformed
+         try {
+            _cliente.anterior();
+            lblclave1.setText(_cliente._ventas().getString("ClaveCliente"));
+            lblnombre1.setText(_cliente._ventas().getString("nomCliente"));
+            lblapellido1.setText(_cliente._ventas().getString("apellCliente"));
+            txtdirec.setText(_cliente._ventas().getString("dirCliente"));
+            lblfecha.setText(_cliente._ventas().getString("fechaCliente"));
+            txtceluc.setText(_cliente._ventas().getString("celCliente"));
+            txtemail1.setText(_cliente._ventas().getString("emailCliente"));
+        } catch (SQLException ex) {
+            Logger.getLogger(WinPrincipal.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_btnanterior1ActionPerformed
+
+    private void btnsig1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnsig1ActionPerformed
+         try {
+            _cliente.siguiente();
+            lblclave1.setText(_cliente._ventas().getString("ClaveCliente"));
+            lblnombre1.setText(_cliente._ventas().getString("nomCliente"));
+            lblapellido1.setText(_cliente._ventas().getString("apellCliente"));
+            txtdirec.setText(_cliente._ventas().getString("dirCliente"));
+            lblfecha.setText(_cliente._ventas().getString("fechaCliente"));
+            txtceluc.setText(_cliente._ventas().getString("celCliente"));
+            txtemail1.setText(_cliente._ventas().getString("emailCliente"));
+        } catch (SQLException ex) {
+            Logger.getLogger(WinPrincipal.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_btnsig1ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        try {
+            if (rbtnclave.isSelected()) {
+                int n = Integer.parseInt(txtbusca.getText());
+                _cliente.verCliente(n);
+                _cliente.siguiente();
+                lblclave1.setText(_cliente._ventas().getString("ClaveCliente"));
+                lblnombre1.setText(_cliente._ventas().getString("nomCliente"));
+                lblapellido1.setText(_cliente._ventas().getString("apellCliente"));
+                txtdirec.setText(_cliente._ventas().getString("dirCliente"));
+                lblfecha.setText(_cliente._ventas().getString("fechaCliente"));
+                txtceluc.setText(_cliente._ventas().getString("celCliente"));
+                txtemail1.setText(_cliente._ventas().getString("emailCliente"));
+
+            }
+            
+            } catch (SQLException ex) {
+            Logger.getLogger(WinPrincipal.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        TxtNomCli.setText(null);
+    }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void ItmVerClientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ItmVerClientesActionPerformed
+        PnlClienteVer.setVisible(true);
+        
+        PnlClienteNuevo.setVisible(false);
+        PnlVerProductos.setVisible(false);
+        archbd.setVisible(false);
+        PnlNuevoProducto.setVisible(false);
+        /*
+        pnlnuevoVendedor.setVisible(false);
+        pnlabrirvendedor.setVisible(false);
+        pnlacercade.setVisible(false);
+        pnlfactura.setVisible(false);
+        archbd.setVisible(false);
+        pnlnuevocliente.setVisible(false);
+        pnlVerProductos.setVisible(false);
+        pnleliminarCliente.setVisible(false);
+        pnlNuevoProducto.setVisible(false);
+        pnleliminarVendedor.setVisible(false);
+        pnlVerProductos.setVisible(false);*/
+    }//GEN-LAST:event_ItmVerClientesActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -654,12 +1009,12 @@ public class WinPrincipal extends javax.swing.JFrame {
     private javax.swing.JButton BtnGenerar;
     private javax.swing.JButton BtnGuardarNvoCli;
     private javax.swing.JButton BtnGuardarProd;
-    private javax.swing.JMenuItem ItmEliminarClientes;
     private javax.swing.JMenuItem ItmNuevoClientes;
     private javax.swing.JMenuItem ItmVerClientes;
     private javax.swing.JLabel LblMensaje;
     private javax.swing.JMenu MnuClientes;
     private javax.swing.JPanel PnlClienteNuevo;
+    private javax.swing.JPanel PnlClienteVer;
     private javax.swing.JPanel PnlNuevoProducto;
     private javax.swing.JPanel PnlVerProductos;
     private javax.swing.JTextField TxtApellCli;
@@ -669,12 +1024,25 @@ public class WinPrincipal extends javax.swing.JFrame {
     private javax.swing.JTextField TxtMailCli;
     private javax.swing.JTextField TxtNomCli;
     private javax.swing.JFileChooser archbd;
+    private javax.swing.JButton btnactualizar;
+    private javax.swing.JButton btnanterior1;
+    private javax.swing.JButton btnsig1;
+    private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -693,13 +1061,22 @@ public class WinPrincipal extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JSeparator jSeparator2;
+    private javax.swing.JLabel lblapellido1;
+    private javax.swing.JLabel lblclave1;
+    private javax.swing.JLabel lblfecha;
     private javax.swing.JLabel lblmensaj;
+    private javax.swing.JLabel lblnombre1;
+    private javax.swing.JRadioButton rbtnclave;
     private javax.swing.JTable tablaProd;
+    private javax.swing.JTextField txtbusca;
     private javax.swing.JTextField txtcantidad;
+    private javax.swing.JTextField txtceluc;
+    private javax.swing.JTextField txtdirec;
+    private javax.swing.JTextField txtemail1;
     private javax.swing.JTextField txtnomP;
     private javax.swing.JTextField txtprecio;
     private javax.swing.JTextField txtunidad;
