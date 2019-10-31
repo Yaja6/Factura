@@ -63,6 +63,23 @@ public class WinPrincipal extends javax.swing.JFrame {
         BtnGuardarProd = new javax.swing.JButton();
         lblmensaj = new javax.swing.JLabel();
         jPanel6 = new javax.swing.JPanel();
+        PnlClienteNuevo = new javax.swing.JPanel();
+        jSeparator1 = new javax.swing.JSeparator();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        TxtNomCli = new javax.swing.JTextField();
+        TxtApellCli = new javax.swing.JTextField();
+        TxtFechCli = new javax.swing.JTextField();
+        TxtDirCli = new javax.swing.JTextField();
+        TxtCellCli = new javax.swing.JTextField();
+        TxtMailCli = new javax.swing.JTextField();
+        BtnGuardarNvoCli = new javax.swing.JButton();
+        LblMensaje = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
@@ -70,6 +87,10 @@ public class WinPrincipal extends javax.swing.JFrame {
         jMenu2 = new javax.swing.JMenu();
         jMenuItem3 = new javax.swing.JMenuItem();
         jMenuItem4 = new javax.swing.JMenuItem();
+        MnuClientes = new javax.swing.JMenu();
+        ItmVerClientes = new javax.swing.JMenuItem();
+        ItmNuevoClientes = new javax.swing.JMenuItem();
+        ItmEliminarClientes = new javax.swing.JMenuItem();
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
@@ -261,7 +282,7 @@ public class WinPrincipal extends javax.swing.JFrame {
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addGap(195, 195, 195)
                         .addComponent(lblmensaj, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(61, Short.MAX_VALUE))
+                .addContainerGap(109, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addComponent(BtnGuardarProd)
@@ -307,6 +328,107 @@ public class WinPrincipal extends javax.swing.JFrame {
             .addGap(0, 56, Short.MAX_VALUE)
         );
 
+        jLabel7.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel7.setText("Nuevo Cliente");
+
+        jLabel8.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel8.setText("Nombre: ");
+
+        jLabel9.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel9.setText("Apellido:");
+
+        jLabel10.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel10.setText("Fecha de Nacimiento:");
+
+        jLabel11.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel11.setText("Direccion:");
+
+        jLabel12.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel12.setText("Celular:");
+
+        jLabel13.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel13.setText("E-mail:");
+
+        BtnGuardarNvoCli.setText("Guardar");
+        BtnGuardarNvoCli.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnGuardarNvoCliActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout PnlClienteNuevoLayout = new javax.swing.GroupLayout(PnlClienteNuevo);
+        PnlClienteNuevo.setLayout(PnlClienteNuevoLayout);
+        PnlClienteNuevoLayout.setHorizontalGroup(
+            PnlClienteNuevoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jSeparator1, javax.swing.GroupLayout.Alignment.TRAILING)
+            .addGroup(PnlClienteNuevoLayout.createSequentialGroup()
+                .addGroup(PnlClienteNuevoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(PnlClienteNuevoLayout.createSequentialGroup()
+                        .addGap(233, 233, 233)
+                        .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(PnlClienteNuevoLayout.createSequentialGroup()
+                        .addGap(118, 118, 118)
+                        .addGroup(PnlClienteNuevoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel8)
+                            .addComponent(jLabel9)
+                            .addComponent(jLabel10)
+                            .addComponent(jLabel11)
+                            .addComponent(jLabel12)
+                            .addComponent(jLabel13))
+                        .addGap(38, 38, 38)
+                        .addGroup(PnlClienteNuevoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(TxtMailCli, javax.swing.GroupLayout.PREFERRED_SIZE, 243, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(TxtCellCli, javax.swing.GroupLayout.PREFERRED_SIZE, 243, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(TxtDirCli, javax.swing.GroupLayout.PREFERRED_SIZE, 243, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(TxtFechCli, javax.swing.GroupLayout.PREFERRED_SIZE, 243, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(TxtApellCli, javax.swing.GroupLayout.PREFERRED_SIZE, 243, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(TxtNomCli, javax.swing.GroupLayout.PREFERRED_SIZE, 243, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(PnlClienteNuevoLayout.createSequentialGroup()
+                        .addGap(255, 255, 255)
+                        .addComponent(BtnGuardarNvoCli))
+                    .addGroup(PnlClienteNuevoLayout.createSequentialGroup()
+                        .addGap(147, 147, 147)
+                        .addComponent(LblMensaje, javax.swing.GroupLayout.PREFERRED_SIZE, 290, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(93, Short.MAX_VALUE))
+        );
+        PnlClienteNuevoLayout.setVerticalGroup(
+            PnlClienteNuevoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(PnlClienteNuevoLayout.createSequentialGroup()
+                .addGap(28, 28, 28)
+                .addComponent(jLabel7)
+                .addGap(18, 18, 18)
+                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(PnlClienteNuevoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel8)
+                    .addComponent(TxtNomCli, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(PnlClienteNuevoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel9)
+                    .addComponent(TxtApellCli, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(PnlClienteNuevoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel10)
+                    .addComponent(TxtFechCli, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(PnlClienteNuevoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel11)
+                    .addComponent(TxtDirCli, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(PnlClienteNuevoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel12)
+                    .addComponent(TxtCellCli, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(PnlClienteNuevoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel13)
+                    .addComponent(TxtMailCli, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(BtnGuardarNvoCli)
+                .addGap(18, 18, 18)
+                .addComponent(LblMensaje, javax.swing.GroupLayout.DEFAULT_SIZE, 31, Short.MAX_VALUE)
+                .addGap(4, 4, 4))
+        );
+
         javax.swing.GroupLayout PnlNuevoProductoLayout = new javax.swing.GroupLayout(PnlNuevoProducto);
         PnlNuevoProducto.setLayout(PnlNuevoProductoLayout);
         PnlNuevoProductoLayout.setHorizontalGroup(
@@ -314,6 +436,8 @@ public class WinPrincipal extends javax.swing.JFrame {
             .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(PnlNuevoProductoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(PnlClienteNuevo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         PnlNuevoProductoLayout.setVerticalGroup(
             PnlNuevoProductoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -323,6 +447,10 @@ public class WinPrincipal extends javax.swing.JFrame {
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(PnlNuevoProductoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(PnlNuevoProductoLayout.createSequentialGroup()
+                    .addComponent(PnlClienteNuevo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 58, Short.MAX_VALUE)))
         );
 
         getContentPane().add(PnlNuevoProducto, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 620, 370));
@@ -366,6 +494,19 @@ public class WinPrincipal extends javax.swing.JFrame {
         jMenu2.add(jMenuItem4);
 
         jMenuBar1.add(jMenu2);
+
+        MnuClientes.setText("Clientes");
+
+        ItmVerClientes.setText("Ver");
+        MnuClientes.add(ItmVerClientes);
+
+        ItmNuevoClientes.setText("Nuevo");
+        MnuClientes.add(ItmNuevoClientes);
+
+        ItmEliminarClientes.setText("Eliminar");
+        MnuClientes.add(ItmEliminarClientes);
+
+        jMenuBar1.add(MnuClientes);
 
         setJMenuBar(jMenuBar1);
 
@@ -458,6 +599,22 @@ public class WinPrincipal extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_BtnGuardarProdActionPerformed
 
+    private void BtnGuardarNvoCliActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnGuardarNvoCliActionPerformed
+        String n = TxtNomCli.getText();
+        String a = TxtApellCli.getText();
+        String d = TxtDirCli.getText();
+        String f = TxtFechCli.getText();
+        String c = TxtCellCli.getText();
+        String e = TxtMailCli.getText();
+        try {
+            _cliente.registrarCliente(n, a, f, d, c, e);
+            LblMensaje.setText("¡Guardado con éxito!");
+
+        } catch (SQLException ex) {
+            Logger.getLogger(WinPrincipal.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_BtnGuardarNvoCliActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -495,16 +652,36 @@ public class WinPrincipal extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BtnGenerar;
+    private javax.swing.JButton BtnGuardarNvoCli;
     private javax.swing.JButton BtnGuardarProd;
+    private javax.swing.JMenuItem ItmEliminarClientes;
+    private javax.swing.JMenuItem ItmNuevoClientes;
+    private javax.swing.JMenuItem ItmVerClientes;
+    private javax.swing.JLabel LblMensaje;
+    private javax.swing.JMenu MnuClientes;
+    private javax.swing.JPanel PnlClienteNuevo;
     private javax.swing.JPanel PnlNuevoProducto;
     private javax.swing.JPanel PnlVerProductos;
+    private javax.swing.JTextField TxtApellCli;
+    private javax.swing.JTextField TxtCellCli;
+    private javax.swing.JTextField TxtDirCli;
+    private javax.swing.JTextField TxtFechCli;
+    private javax.swing.JTextField TxtMailCli;
+    private javax.swing.JTextField TxtNomCli;
     private javax.swing.JFileChooser archbd;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
@@ -519,6 +696,7 @@ public class WinPrincipal extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JSeparator jSeparator1;
     private javax.swing.JLabel lblmensaj;
     private javax.swing.JTable tablaProd;
     private javax.swing.JTextField txtcantidad;
