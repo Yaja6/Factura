@@ -27,6 +27,7 @@ public class WinPrincipal extends javax.swing.JFrame {
         initComponents();
         archbd.setVisible(false);
         PnlVerProductos.setVisible(false);
+        PnlNuevoProducto.setVisible(false);
     }
 
     /**
@@ -226,7 +227,8 @@ public class WinPrincipal extends javax.swing.JFrame {
 
         txtunidad.setFont(new java.awt.Font("Open Sans", 0, 14)); // NOI18N
 
-        BtnGuardarProd.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Save-icon.png"))); // NOI18N
+        BtnGuardarProd.setBackground(new java.awt.Color(0, 51, 204));
+        BtnGuardarProd.setText("Guardar");
         BtnGuardarProd.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BtnGuardarProdActionPerformed(evt);
@@ -240,10 +242,6 @@ public class WinPrincipal extends javax.swing.JFrame {
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(BtnGuardarProd, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(262, 262, 262))
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel4Layout.createSequentialGroup()
@@ -264,6 +262,10 @@ public class WinPrincipal extends javax.swing.JFrame {
                         .addGap(195, 195, 195)
                         .addComponent(lblmensaj, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(61, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(BtnGuardarProd)
+                .addGap(236, 236, 236))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -404,17 +406,19 @@ public class WinPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_archbdActionPerformed
 
     private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
-        // TODO add your handling code here:
+        archbd.setVisible(false);
+        PnlVerProductos.setVisible(false);
+        PnlNuevoProducto.setVisible(true);
     }//GEN-LAST:event_jMenuItem4ActionPerformed
 
     private void BtnGenerarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnGenerarActionPerformed
 
         DefaultTableModel modelo = (DefaultTableModel) tablaProd.getModel();
 
-        String[] c = new String[7];
+        String[] c = new String[11];
 
         try {
-            for (int i = 0; i < 8; i++) {
+            for (int i = 0; i < 12; i++) {
                 _producto.siguiente();
                 c[0] = String.valueOf(_producto._ventas().getInt("claveProducto"));
                 c[1] = _producto._ventas().getString("nomProducto");
@@ -435,11 +439,23 @@ public class WinPrincipal extends javax.swing.JFrame {
     private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
         archbd.setVisible(false);
         PnlVerProductos.setVisible(true);
-
+        PnlNuevoProducto.setVisible(false);
     }//GEN-LAST:event_jMenuItem3ActionPerformed
 
     private void BtnGuardarProdActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnGuardarProdActionPerformed
-        
+        String n = txtnomP.getText();
+        String p = txtprecio.getText();
+        String c = txtcantidad.getText();
+        String u = txtunidad.getText();
+
+        try {
+            _producto.registrarProducto(n, p, c, u);
+
+            lblmensaj.setText("¡Guardado con éxito!");
+        } catch (SQLException ex) {
+            Logger.getLogger(WinPrincipal.class.getName()).log(Level.SEVERE, null, ex);
+            lblmensaj.setText("Fallo en guardar.");
+        }
     }//GEN-LAST:event_BtnGuardarProdActionPerformed
 
     /**
