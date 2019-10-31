@@ -30,14 +30,14 @@ public class ClsVendedores {
     _numVendedores=null;
      _emailVendedores=null;
     }
-    public void leer(ResultSet cliente) throws SQLException{
-     _claveVendedores=cliente.getInt("claveVendedores");
-     _nomVendedores=cliente.getString("nomVendedores");
-     _apellVendedores=cliente.getString("apellVendedores");
-     _dirVendedores=cliente.getString("dirVendedores");
-     _fechaVendedores=cliente.getString("fechaVendedores");
-    _numVendedores=cliente.getString("celVendedores");
-     _emailVendedores=cliente.getString("emailVendedores");
+    public void leer(ResultSet Vendedores) throws SQLException{
+     _claveVendedores=Vendedores.getInt("claveVendedores");
+     _nomVendedores=Vendedores.getString("nomVendedores");
+     _apellVendedores=Vendedores.getString("apellVendedores");
+     _dirVendedores=Vendedores.getString("dirVendedores");
+     _fechaVendedores=Vendedores.getString("fechaVendedores");
+    _numVendedores=Vendedores.getString("celVendedores");
+     _emailVendedores=Vendedores.getString("emailVendedores");
     }
 
     public int getClaveVendedores() {
